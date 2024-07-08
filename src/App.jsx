@@ -1,34 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+//Xóa 2 dòng không sử dụng đi
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+import HeaderDemo from './components/HeaderDemo'
+import Navigation from './components/Navigation'
+import Content from './components/Content'
+import Footer from './components/Footer'
+import Home from './components/Home'
+// import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div class="container mx-auto w-2/5 my-40 rounded-md">
+    <Home/>
+    <HeaderDemo/>
+   
+    <div class="grid grid-cols-3"> 
+    <Navigation/>
+    <Content/>
+    </div>
+  
+    <Footer/>
+  {/* <h1 className='text-red-600'>Tôi là quách khải</h1>; */}
+    </div>
   )
 }
 
