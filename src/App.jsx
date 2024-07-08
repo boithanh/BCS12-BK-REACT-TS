@@ -13,7 +13,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div class="container mx-auto w-2/5 my-40 rounded-md">
+    <div class="container mx-auto w-2/5 my-40">
     <Home/>
     <HeaderDemo/>
    
