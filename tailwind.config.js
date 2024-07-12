@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{svelte,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+    },
+    extend: {
+      fontSize: {
+        title: "33px",
+      },
+    },
   },
   plugins: [],
 };

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div class="text-green-900 bg-black py-1 text-2xl rounded-tl rounded-tr">Home Component</div>
+    <div className="text-green-900 bg-black py-1 text-2xl rounded-tl rounded-tr">Home Component</div>
   )
 }
 
