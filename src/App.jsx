@@ -12,10 +12,15 @@ import DemoEvent from "./components/DemoEvent";
 import DemoCss from "./components/DemoCss/DemoCss";
 import DemoState from "./components/DemoState/DemoState";
 import BaiTap1State from "./components/DemoState/BaiTap1State";
+import BaiTapProp from "./components/BaiTap/BaiTapProp";
+import BaiTapHIenThiDienThoai from "./components/BaiTap/BaiTapHIenThiDienThoai/BaiTapHIenThiDienThoai";
 // import './App.css'
 
 function App() {
   const [count, setCount] = useState(0);
+  function updateStateCount() {
+    setCount(count + 1);
+  }
 
   return (
     <>
@@ -37,7 +42,9 @@ function App() {
         <h5 className="demo_sass">Hello be ba</h5>
       </div>
       <DemoState /> */}
-      <BaiTap1State />
+      {/* <BaiTap1State updateStateCount={updateStateCount} abc={count} /> */}
+      {/* <BaiTapProp /> */}
+      <BaiTapHIenThiDienThoai />
     </>
   );
 }

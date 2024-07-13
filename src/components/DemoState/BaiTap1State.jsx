@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
-const BaiTap1State = () => {
+const BaiTap1State = (props) => {
+  // Dữ liệu props là dữ liệu chỉ đọc (readOnly) chỉ phục vụ việc truyền DATA từ component cha xuống cho con xử lý
+  // Nếu cố gắng cập nhật thì trình duyệt sẽ báo lỗi.
   const [selectCar, setSelectCar] = useState("black-car.jpg");
+  console.log(props);
   const arrButton = [
     {
       icon: "/public/CarBasic/icons/icon-black.jpg",
@@ -30,7 +33,13 @@ const BaiTap1State = () => {
   ];
   return (
     <div>
-      <h2>Bài Tập hiển thị loại xe tương ứng bàng State</h2>
+      <h2>Bài Tập hiển thị loại xe tương ứng bàng State{props.abc}</h2>
+      <button
+        className="py-2 px-5 bg-red-500 text-white rounded-lg"
+        onClick={props.updateStateCount}
+      >
+        Tăng count
+      </button>
       <div className="flex">
         <div className="w-2/5">
           <img src={`public/CarBasic/products/${selectCar}`} alt="" />
