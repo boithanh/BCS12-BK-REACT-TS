@@ -1,8 +1,19 @@
 import React from "react";
 import ItemPokemon from "./ItemPokemon";
 import { DatePicker } from "antd";
+import { useSelector } from "react-redux";
 
 const BaiTapProp = () => {
+  // const valueState = useSelector((state) => state.pokemonSlice);
+  // Biến thể đặc biệt arrow function 
+  // cách viết chưa biến thể :   const valueState = useSelector((state) => { return state.pokemonSlice} 
+  // console.log(valueState);
+
+  const { pokemon } = useSelector((state) => state.pokemonSlice);
+  // Khi đi làm bóc tách ra luôn ko cần lấy hết valueState về
+  console.log(pokemon);
+
+
   const pokemons = [
     {
       name: "Pikachu",
