@@ -1,22 +1,21 @@
-import { createSlice, current } from '@reduxjs/toolkit'
+import { createSlice, current } from "@reduxjs/toolkit";
 
 const initialState = {
-    hoten: "Cẩm Y Vệ",
-}
+  hoTen: "Cẩm y vệ",
+};
 
 const userSlice = createSlice({
-    name: "user",
-    initialState,
-    reducers: {
-        capNhatHoTen: (state, action) => {
-            console.log(action);
-            console.log(current(state));
-            console.log(action.payload);
-            state.hoten = action.payload;
-        }
-    }
+  name: "user",
+  initialState,
+  reducers: {
+    capNhatHoTen: (state, action) => {
+      console.log(current(state));
+      console.log(action.payload);
+      state.hoTen = action.payload;
+    },
+  },
 });
 
-export const { capNhatHoTen, banhboithanh } = userSlice.actions
+export const { capNhatHoTen } = userSlice.actions;
 
-export default userSlice.reducer
+export default userSlice.reducer;

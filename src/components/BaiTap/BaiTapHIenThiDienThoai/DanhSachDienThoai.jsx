@@ -5,18 +5,18 @@ const DanhSachDienThoai = ({ listPhone, title, updateDienThoai }) => {
     <>
       <h3>{title}</h3>
       <div className="grid grid-cols-4">
-        {/* Thực hiện sử dụng mảng để render tạo ra các div item hiển thị dữ liệu điện thoại, các thông tin cần hiển thị bao gồm: hình ảnh, tên điện thoại vào button xem chi tiết */}
+        {/* NV1 : Thực hiện sử dụng mảng để render tạo các div item hiển thị dữ liệu điện thoại, các thông tin cần hiển thị bao gồm: hình ảnh, tên điện thoại và một nút button xem chi tiết */}
         {listPhone.map((item, index) => {
           const { image, name } = item;
           return (
-            <div key={index}>
+            <div>
               <img src={image} alt="" />
-              <h2>{name}</h2>
+              <h3>{name}</h3>
               <button
-                className="py-5 px-2 bg-green-500"
                 onClick={() => {
                   updateDienThoai(item);
                 }}
+                className="bg-green-700 text-white py-2 px-5 rounded-lg"
               >
                 Xem chi tiết
               </button>
