@@ -1,9 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import BaiTap1Props from "./components/BaiTap/BaiTap1Props";
-import BaiTapHienThiDienThoai from "./components/BaiTap/BaiTapHienThiDienThoai/BaiTapHienThiDienThoai";
-import HomeTemplate from "./template/HomeTemplate/HomeTemplate";
-import PageNotFound from "./components/PageNotFound/PageNotFound";
-import ShoeDetail from "./components/ShoeDetail";
 import useRouteCustom from "./routes/useRouteCustom";
 import { message } from "antd";
 import React from "react";

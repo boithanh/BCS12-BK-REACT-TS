@@ -2,12 +2,13 @@ import React from "react";
 import { useRoutes } from "react-router-dom";
 import HomeTemplate from "../template/HomeTemplate/HomeTemplate";
 import PageNotFound from "../components/PageNotFound/PageNotFound";
+
+import { path } from "../common/path";
 import BaiTap1Props from "../components/BaiTap/BaiTap1Props";
 import BaiTapHienThiDienThoai from "../components/BaiTap/BaiTapHienThiDienThoai/BaiTapHienThiDienThoai";
 import ShoeDetail from "../components/ShoeDetail";
-import { path } from "../common/path";
 import DemoRedux from "../components/DemoRedux/DemoRedux";
-import BaiTapLacXiNgau from "../components/BaiTap/BaiTapLacXiNgau/BaiTapLacXiNgau";
+import BaiTapLacXiNgau from "../components/BaiTap/BaiTapLacXiNgau/BaiTapLacXINgau";
 import DemoUseEffect from "../components/DemoUseEffect/DemoUseEffect";
 import DemoUseEffectDetail from "../components/DemoUseEffect/DemoUseEffectDetail";
 import DemoFormReact from "../components/DemoFormReact/DemoFormReact";

@@ -1,5 +1,5 @@
 import React from "react";
-import animationPageNotFound from "./../../assets/animation/animation.json";
+import animationPageNotFound from "./../../assets/Animation/animation.json";
 import Lottie from "lottie-react";
 import { Link, useNavigate } from "react-router-dom";
 const PageNotFound = () => {
